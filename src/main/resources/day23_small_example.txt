@@ -1,0 +1,9 @@
+kh-na
+na-bp
+bp-rc
+rc-tc
+kh-tc
+kh-ru
+ru-na
+na-to
+to-la
