@@ -1,9 +1,9 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 
 fun main() {
-    val lines = readAllLines("day23_input.txt")
+    val lines = readAllLines("2024/day23_input.txt")
     val day23 = Day23(lines)
     println("Part1: There are ${day23.getNetworksContainingT(3).size} three computers networks")
     println("Part2: The password for the LAN party is ${day23.getBiggestNetwork().sortedBy { it }.joinToString(",")}")

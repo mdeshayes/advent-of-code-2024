@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.AStarPath
 import advent.util.Map2d
@@ -9,7 +9,7 @@ import advent.util.Map2d.Direction.Companion.WEST
 import advent.util.readAllLines
 
 fun main() {
-    val lines = readAllLines("day21_input.txt")
+    val lines = readAllLines("2024/day21_input.txt")
     val day21 = Day21(lines)
     println("Part1: complexity score is ${day21.getComplexityScore(2)}")
     println("Part2: complexity score is ${day21.getComplexityScore(25)}")

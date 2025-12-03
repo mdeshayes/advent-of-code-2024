@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.*
 import advent.util.Map2d.Direction
@@ -20,7 +20,7 @@ private const val WIDER_BOX_CHAR_LEFT = '['
 private const val WIDER_BOX_CHAR_RIGHT = ']'
 
 fun main() {
-    val lines = readAllLines("day15_input.txt")
+    val lines = readAllLines("2024/day15_input.txt")
     val day15 = Day15(lines)
     println("Part 1: Sum of boxes GPS is ${day15.getBoxesGps()}")
 //    day15.startVisualMode()

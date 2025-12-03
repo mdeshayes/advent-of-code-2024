@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 import java.lang.Long.parseLong
@@ -7,7 +7,7 @@ import kotlin.math.pow
 
 
 fun main() {
-    val lines = readAllLines("day17_input.txt")
+    val lines = readAllLines("2024/day17_input.txt")
     val day17 = Day17(lines)
     println("Part1: Output of the program is ${day17.executeProgram().joinToString(",")}")
     println("Part2: register A value is ${day17.getRegisterAValueToMatchOutputAndProgram()}")

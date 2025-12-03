@@ -1,11 +1,11 @@
-package advent
+package advent.y2024
 
 import advent.util.Map2d
 import advent.util.readAllLines
 
 
 fun main() {
-    val lines = readAllLines("day4_input.txt")
+    val lines = readAllLines("2024/day4_input.txt")
     val day04 = Day04(lines)
     println("Part1: There are ${day04.getXmasNumber()} Xmas")
     println("Part2: There are ${day04.getCrossMasNumber()} X-max")

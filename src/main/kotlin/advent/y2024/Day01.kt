@@ -1,10 +1,10 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 import kotlin.math.abs
 
 fun main() {
-    val lines = readAllLines("day1_input.txt")
+    val lines = readAllLines("2024/day1_input.txt")
     val day01 = Day01(lines)
     println("Part1: The distance between the two lists is ${day01.getDistance()}")
     println("Part2: The similarity between the two list is : ${day01.getSimilarity()}")

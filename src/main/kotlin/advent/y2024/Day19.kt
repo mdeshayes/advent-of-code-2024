@@ -1,10 +1,10 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 
 
 fun main() {
-    val lines = readAllLines("day19_input.txt")
+    val lines = readAllLines("2024/day19_input.txt")
     val day19 = Day19(lines)
     println("Part1: ${day19.countPossibleDesign()} possible designs found")
     println("Part2: ${day19.countPossibleCombinations()} possible combinations found")

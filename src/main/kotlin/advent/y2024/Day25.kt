@@ -1,9 +1,9 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 
 fun main() {
-    val lines = readAllLines("day25_input.txt")
+    val lines = readAllLines("2024/day25_input.txt")
     val day25 = Day25(lines)
     println("Part 1: ${day25.countKeyLockPairs()} key-lock pairs are compatible")
 }

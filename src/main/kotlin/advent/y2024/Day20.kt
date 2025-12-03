@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.AStarPath
 import advent.util.Map2d
@@ -7,7 +7,7 @@ import advent.util.readAllLines
 import kotlin.math.abs
 
 fun main() {
-    val lines = readAllLines("day20_input.txt")
+    val lines = readAllLines("2024/day20_input.txt")
     val day20 = Day20(lines)
     println("Part1: ${day20.countCheatingCombinations()} cheats will save us at least 100 picoseconds")
     println("Part2: ${day20.countCheatingCombinations(100, 20)} cheats will save us at least 100 picoseconds")

@@ -1,10 +1,10 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 import kotlin.math.abs
 
 fun main() {
-    val lines = readAllLines("day2_input.txt")
+    val lines = readAllLines("2024/day2_input.txt")
     val day02 = Day02(lines)
     println("Part1: ${day02.countIsSafe()} reports are safe")
     println("Part2: ${day02.countIsSafeIfWeRemoveOne()} reports could be safe if we remove one number")

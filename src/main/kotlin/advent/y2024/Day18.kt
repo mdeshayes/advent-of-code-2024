@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.AStarPath
 import advent.util.Map2d
@@ -9,7 +9,7 @@ import advent.util.readAllLines
 
 
 fun main() {
-    val lines = readAllLines("day18_input.txt")
+    val lines = readAllLines("2024/day18_input.txt")
     val day18 = Day18(lines, size = 71)
     println("Part1: path size is ${day18.findPathAfter(1024).size - 1}")
     println("Part2: latest corrupted byte is ${day18.findLatestCorruptedByte()}")

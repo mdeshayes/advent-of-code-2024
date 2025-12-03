@@ -1,9 +1,9 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 
 fun main() {
-    val lines = readAllLines("day7_input.txt")
+    val lines = readAllLines("2024/day7_input.txt")
     val day07 = Day07(lines)
     println("Part 1: Sum of possible equations is ${day07.sumPossibleEquations()}")
     day07.enableConcatOperand()

@@ -1,11 +1,11 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 
 const val MUL_REGEX = "mul\\(([0-9]+),([0-9]+)\\)"
 
 fun main() {
-    val lines = readAllLines("day3_input.txt")
+    val lines = readAllLines("2024/day3_input.txt")
     val day03 = Day03(lines)
     println("Part1: " + day03.computeMul())
     println("Part2: " + day03.computeMulWithoutDontBlocks())

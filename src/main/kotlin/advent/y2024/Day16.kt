@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.AStarPath
 import advent.util.Map2d
@@ -8,7 +8,7 @@ import advent.util.Node
 import advent.util.readAllLines
 
 fun main() {
-    val lines = readAllLines("day16_input.txt")
+    val lines = readAllLines("2024/day16_input.txt")
     val day16 = Day16(lines)
     println("Part1: Lowest path score possible is: ${day16.bestPath().last().costFromStart}")
     println("Part2: There are ${day16.getAllBestPathPositions().size} positions on the best paths")

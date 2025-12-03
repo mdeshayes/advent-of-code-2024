@@ -1,10 +1,9 @@
-package advent
+package advent.y2024
 
-import advent.Day24.*
 import advent.util.readAllLines
 
 fun main() {
-    val lines = readAllLines("day24_input.txt")
+    val lines = readAllLines("2024/day24_input.txt")
     val day24 = Day24(lines)
     println("Part1: Z number is ${day24.getZNumber()}")
     day24.expandEquationsAndCheckSwaps()
@@ -292,10 +291,10 @@ private fun getOperatorName(operator: (Boolean, Boolean) -> Boolean): String {
     }
 }
 
-private fun replaceOperand(operand: Operand, oldName: String, newOperand: Operand): Operand {
+private fun replaceOperand(operand: Day24.Operand, oldName: String, newOperand: Day24.Operand): Day24.Operand {
     when (operand) {
-        is SingleValueOperand -> return newOperand
-        is SubOperation -> {
+        is Day24.SingleValueOperand -> return newOperand
+        is Day24.SubOperation -> {
             operand.replace(oldName, newOperand)
             return operand
         }

@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.Map2d
 import advent.util.Map2d.Direction.Companion.EAST
@@ -16,7 +16,7 @@ private const val LEFT_CHAR = '<'
 private const val OBSTACLE_CHAR = '#'
 
 fun main() {
-    val lines = readAllLines("day6_input.txt")
+    val lines = readAllLines("2024/day6_input.txt")
     val day06 = Day06(lines)
     val startPart1 = System.currentTimeMillis()
     val countGuardPosition = day06.countGuardPosition()

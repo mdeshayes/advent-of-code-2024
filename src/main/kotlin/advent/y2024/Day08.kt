@@ -1,10 +1,10 @@
-package advent
+package advent.y2024
 
 import advent.util.Map2d
 import advent.util.readAllLines
 
 fun main() {
-    val lines = readAllLines("day8_input.txt")
+    val lines = readAllLines("2024/day8_input.txt")
     val day8 = Day8(lines)
     println("Part 1: ${day8.countSingleAntinodes()} single antinodes found")
     println("Part 2: ${day8.countAllAntinodes()} antinodes found")

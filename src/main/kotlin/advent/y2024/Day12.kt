@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.Map2d
 import advent.util.Map2d.Direction
@@ -15,7 +15,7 @@ import advent.util.toCurrency
 
 
 fun main() {
-    val lines = readAllLines("day12_input.txt")
+    val lines = readAllLines("2024/day12_input.txt")
     val map = Map2d(lines) { it }
     val day12 = Day12(map)
     println("Part1: Total price is ${toCurrency(day12.getTotalPrice())}")

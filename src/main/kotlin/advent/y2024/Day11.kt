@@ -1,10 +1,10 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 
 
 fun main() {
-    val line = readAllLines("day11_input.txt")[0]
+    val line = readAllLines("2024/day11_input.txt")[0]
     val day11 = Day11(line)
     println("Part1: There are ${day11.getStonesNumberAfterBlinks(25)} stones after 25 blinks")
     val begin = System.currentTimeMillis()

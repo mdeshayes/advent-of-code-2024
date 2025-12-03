@@ -1,10 +1,10 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 import java.lang.Math.floorMod
 
 fun main() {
-    val lines = readAllLines("day22_input.txt")
+    val lines = readAllLines("2024/day22_input.txt")
     val day22 = Day22(lines)
     println("Part 1: sum of secrets is ${day22.getSumOfSecrets(2000)}")
     val sequenceAndMaxBananas = day22.getMaxBananas(2000)

@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 import kotlin.math.abs
@@ -7,7 +7,7 @@ private const val BUTTON_REGEX = "Button [A-B]: X\\+([0-9]+), Y\\+([0-9]+)"
 private const val PRIZE_REGEX = "Prize: X=([0-9]+), Y=([0-9]+)"
 
 fun main() {
-    val lines = readAllLines("day13_input.txt")
+    val lines = readAllLines("2024/day13_input.txt")
     val day13 = Day13(lines)
     println("Part 1: Total cost is ${day13.getCost()} tokens")
     println("Part 2: Total cost after shifting is ${day13.getShiftedCost()} tokens")

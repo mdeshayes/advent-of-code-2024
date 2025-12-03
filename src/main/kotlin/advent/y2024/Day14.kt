@@ -1,4 +1,4 @@
-package advent
+package advent.y2024
 
 import advent.util.Day14Application
 import advent.util.readAllLines
@@ -14,7 +14,7 @@ private const val HEIGHT = 103
 private const val WIDTH = 101
 
 fun main() {
-    val lines = readAllLines("day14_input.txt")
+    val lines = readAllLines("2024/day14_input.txt")
     var day14 = Day14(lines, HEIGHT, WIDTH)
     day14.moveRobots(100)
     println("Part 1: Safety score is ${day14.computeSafetyFactor()} after 100s")

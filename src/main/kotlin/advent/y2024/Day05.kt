@@ -1,10 +1,10 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 import java.util.Comparator
 
 fun main() {
-    val lines = readAllLines("day5_input.txt")
+    val lines = readAllLines("2024/day5_input.txt")
     val day05 = Day05(lines)
     println("Part1: There are ${day05.getPossibleUpdateScore()} possible updates")
     println("Part2: There are ${day05.getUpdatesToFixScore()} updates to fix")

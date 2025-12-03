@@ -1,9 +1,9 @@
-package advent
+package advent.y2024
 
 import advent.util.readAllLines
 
 fun main() {
-    val line = readAllLines("day9_input.txt")[0]
+    val line = readAllLines("2024/day9_input.txt")[0]
     val day09 = Day09(line)
     day09.compact()
     println("Part1: checksum is ${day09.getDiskChecksum()}")
