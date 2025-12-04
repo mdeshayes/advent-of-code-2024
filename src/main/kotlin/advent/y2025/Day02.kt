@@ -1,10 +1,9 @@
 package advent.y2025
 
-import java.io.File
+import advent.util.readAllLines
 
 fun main() {
-    val allLines =
-        File("/home/mathias/IdeaProjects/perso/advent-of-code-2024/src/main/resources/2025/day2_input.txt").readLines()[0]
+    val allLines = readAllLines("2025/day2_input.txt")[0]
     val day02 = Day02(allLines)
     println("Numbers of invalids = ${day02.getNumbersOfInvalids()}")
     println("Numbers of really invalids = ${day02.getNumbersOfReallyInvalids()}")

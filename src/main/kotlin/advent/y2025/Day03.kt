@@ -22,7 +22,7 @@ class Day03(lines: List<String>) {
     }
 
     private fun getMaximumJoltage(bank: List<Int>, nbDigits: Int = 2): Long {
-        return getMaximumJoltageAsString(bank, nbDigits).toLong().also { println(it) }
+        return getMaximumJoltageAsString(bank, nbDigits).toLong()
     }
 
     private fun getMaximumJoltageAsString(bank: List<Int>, nbDigits: Int): String {

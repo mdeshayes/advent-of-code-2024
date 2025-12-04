@@ -13,7 +13,7 @@ import advent.util.plus
 import advent.util.readAllLines
 
 fun main() {
-    val allLines = readAllLines("/2025/day4_input.txt")
+    val allLines = readAllLines("2025/day4_input.txt")
     val day04 = Day04(allLines)
     println("Number of immediately accessible papers: ${day04.getImmediatelyAccessiblePapers().size}")
     println("Number of accessible papers: ${day04.getNumberOfAccessiblePapers()}")

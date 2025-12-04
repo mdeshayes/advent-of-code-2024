@@ -1,12 +1,12 @@
 package advent.y2025
 
+import advent.util.readAllLines
 import java.io.File
 import java.lang.Math.floorMod
 import kotlin.math.abs
 
 fun main() {
-    val allLines =
-        File("/home/mathias/IdeaProjects/perso/advent-of-code-2024/src/main/resources/2025/day1_input.txt").readLines()
+    val allLines = readAllLines("2025/day1_input.txt")
     val day01 = Day01(allLines)
     println("Part1: The code is ${day01.getPassword()}")
     println("Part1: The 0x434C49434B code is ${day01.get0x434C49434BPassword()}")
@@ -37,7 +37,6 @@ class Day01(lines: List<String>) {
         val nbTours = abs(rotation) / 100
         val additionalTour = target !in 1..99 && position != 0
         var nbZero = nbTours + if (additionalTour) 1 else 0
-        println("position=$position, rotation=${rotation},nbTours=$nbTours, target=$target, additionalTour=$additionalTour, nbZero = $nbZero")
         return nbZero
     }
 }
