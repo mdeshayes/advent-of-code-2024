@@ -1,6 +1,14 @@
 package advent.util
 
 import advent.util.Map2d.Direction
+import advent.util.Map2d.Direction.Companion.EAST
+import advent.util.Map2d.Direction.Companion.NORTH
+import advent.util.Map2d.Direction.Companion.NORTH_EAST
+import advent.util.Map2d.Direction.Companion.NORTH_WEST
+import advent.util.Map2d.Direction.Companion.SOUTH
+import advent.util.Map2d.Direction.Companion.SOUTH_EAST
+import advent.util.Map2d.Direction.Companion.SOUTH_WEST
+import advent.util.Map2d.Direction.Companion.WEST
 
 class Map2d<T : Any>(lines: List<String>, mapFunc: (Char) -> T) : Iterable<Pair<Pair<Int, Int>, T>> {
 
